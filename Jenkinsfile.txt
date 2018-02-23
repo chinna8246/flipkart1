@@ -1,0 +1,17 @@
+pipeline{
+agent any
+
+stages{
+stage('compile 	stage')
+{
+steps{
+sh 'mvn compile'
+}
+}
+stage('testing the app')
+{
+steps{
+sh 'mvn test'
+}
+}
+
